@@ -165,17 +165,15 @@ q2 = st.radio("선택하세요.", ["①", "②", "③", "④", "⑤"], key="q2")
 
 st.latex(r"①\ \frac{x}{x+2}")
 st.latex(r"②\ \frac{x+2}{x}")
-st.latex(r"③\ \frac{x+2}{x+2}")
-st.latex(r"④\ \frac{x+2}{x+2}")
-st.latex(r"⑤\ \frac{x+2}{x+2}")
+st.latex(r"③\ 1")
+st.latex(r"④\ \frac{x+1}{x+2}")
+st.latex(r"⑤\ \frac{2x}{x+2}")
 
 if st.button("문제 2 정답 확인"):
     if q2 == "③":
         st.success("정답입니다! 🎉")
     else:
         st.error("틀렸습니다 ❌")
-
-st.write("---")
 
 # ---------------------
 # 문제 3 (곱셈 → 인수분해 → 약분)
